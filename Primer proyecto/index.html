@@ -6,7 +6,7 @@
     <script>
         // 1 es piedra, 2 espapel, 3 es tijera
         let jugador = 0
-        let pc = 2
+        let pc = 3
         jugador = prompt("Elije 1 para piedra, 2 para papel, 3 para tijera")
         //alert("Elejiste " + jugador)
         if(jugador == 1){
@@ -24,6 +24,12 @@
             alert("PC elije 🧻")
         } else if(pc == 3){
             alert("PC elije ✂")
+        }
+        //COMBATE
+        if(pc == jugador){
+            alert("EMPATE")
+        }else if(jugador == 1 && pc == 3){
+            alert("GANASTE")
         }
     </script>
 </head>
