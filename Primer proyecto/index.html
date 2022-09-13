@@ -7,6 +7,19 @@
         function aleatorio(Min,Max){
             return Math.floor(Math.random() * (Max - Min + 1) + Min)
         }
+        function eleccion(jugada){
+            let resultado = ""
+            if(jugador == 1){
+            resultado = "Piedra 🥌"
+            } else if(jugador == 2){
+                resultado = "Papel 🧻"
+            } else if(jugador == 3){
+                resultado = "Tijera ✂"
+            } else {
+                resultado= "MAL ELEGIDO"
+            }
+            return resultado
+        }
         // 1 es piedra, 2 espapel, 3 es tijera
         let jugador = 0
         let pc = aleatorio(1,2)
