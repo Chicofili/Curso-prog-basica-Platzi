@@ -9,11 +9,11 @@
         }
         function eleccion(jugada){
             let resultado = ""
-            if(jugador == 1){
+            if(jugada == 1){
             resultado = "Piedra 🥌"
-            } else if(jugador == 2){
+            } else if(jugada == 2){
                 resultado = "Papel 🧻"
-            } else if(jugador == 3){
+            } else if(jugada == 3){
                 resultado = "Tijera ✂"
             } else {
                 resultado= "MAL ELEGIDO"
@@ -25,22 +25,8 @@
         let pc = aleatorio(1,2)
         jugador = prompt("Elije 1 para piedra, 2 para papel, 3 para tijera")
         //alert("Elejiste " + jugador)
-        if(jugador == 1){
-            alert("Elejiste 🥌")
-        } else if(jugador == 2){
-            alert("Elejiste 🧻")
-        } else if(jugador == 3){
-            alert("Elejiste ✂")
-        } else {
-            alert("Elejiste PERDER")
-        }
-        if(pc == 1){
-            alert("PC elije 🥌")
-        } else if(pc == 2){
-            alert("PC elije 🧻")
-        } else if(pc == 3){
-            alert("PC elije ✂")
-        }
+        alert("PC elige: " + eleccion(pc))
+        alert("Tú eliges: " + eleccion(jugador))
         //COMBATE
         if(pc == jugador){
             alert("EMPATE")
